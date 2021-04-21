@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/lib.css">
+    <link rel="stylesheet" href="../styles/components/partials/navbar.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="../styles/components/partials/title.css">
+    <title>Zoologistica // Contacto</title><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="nav -Flex">
+      <ul class="nav_links -Flex">
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="./envia.html">ENVIA</a></li>
+        <li><a href="">AFILIATE</a></li>
+        <li><a href="./contacto.html">CONTACTO</a></li>
+      </ul><a class="burger"><i class="fas fa-caret-square-down"></i></a>
+    </nav>
+    <script>
+      const toggleButton = document.getElementsByClassName('burger')[0]
+      const navbarLinks = document.getElementsByClassName('nav_links')[0]
+      const nav = document.getElementsByClassName('nav')[0]
+      
+      toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('toggle-active'),
+        nav.classList.toggle('toggle-active-burger')
+      });
+    </script><br class="main-mqrgin"><br>
+    <link rel="stylesheet" href="../styles/components/buttons.css">
+    <section class="contact -Flex -Padd2">
+          <header class="comp-title">
+            <h3>ponte en contacto con nosotros</h3>
+          </header>
+      <div class="contact__social -Flex"><a href="">
+          <div class="card -Flex"><i class="fab fa-facebook"></i>
+            <div>
+              <h5>FACEBOOK:</h5>
+              <p>@zoologistica</p>
+            </div>
+          </div></a><a href="">
+          <div class="card -Flex"><i class="fab fa-whatsapp"></i>
+            <div>
+              <h5>WHATSAPP:</h5>
+              <p>+52 33 30 48 56 95</p>
+            </div>
+          </div></a><a href="">
+          <div class="card -Flex"><i class="far fa-envelope-open"></i>
+            <div>
+              <h5>GMAIL:</h5>
+              <P>zoologistica@gmail.com</P>
+            </div>
+          </div></a></div>
+      <sectio class="contact__mail -Flex">
+        <form class="-Padd" action="mailto:zoologistica@gmail.com">
+          <input type="text" name="nombre" placeholder="nombre">
+          <input type="text" name="telefono" placeholder="telefono">
+          <textarea name="asunto" rows="4" placeholder="asunto"></textarea>
+              <button class="btn-primary -Flex" type="submit">enviar</button>
+        </form>
+      </sectio>
+    </section>
+  </body>
+</html>
